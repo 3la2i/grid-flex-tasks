@@ -1,0 +1,52 @@
+.grid-container {
+  display: grid;
+
+  background-color: blue;
+  padding: 10px;
+  grid-template-areas:
+    "header header header header header header header header"
+    "section2 section2  section2 section2 maincontent maincontent maincontent maincontent"
+    "section3 section3  section3 section3 extracontent extracontent extracontent extracontent"
+    "relatedl relatedl  relatedl relatedl relatedl relatedr relatedr relatedr"
+    "footer footer footer footer footer footer footer footer";
+  gap: 10px;
+}
+
+.header {
+  grid-area: header;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+.maincontent {
+  grid-area: maincontent;
+}
+
+.extracontent {
+  grid-area: extracontent;
+}
+
+.relatedl {
+  grid-area: relatedl;
+}
+
+.relatedr {
+  grid-area: relatedr;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
